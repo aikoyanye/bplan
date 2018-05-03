@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_checkbaby"
+            android:icon="@drawable/nav_checkbaby"
+            android:title="查看宝宝"/>
+        <item
+            android:id="@+id/nav_addbaby"
+            android:icon="@drawable/nav_addbaby"
+            android:title="添加宝宝"/>
+        <item
+            android:id="@+id/nav_parentinfo"
+            android:icon="@drawable/nav_pareninfo"
+            android:title="家长信息"/>
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/nav_store"
+            android:title="智能商城"/>
+        <item
+            android:id="@+id/nav_setarea"
+            android:icon="@drawable/nav_setnav"
+            android:title="设置范围"/>
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/nav_aboutus"
+            android:title="关于我们"/>
+    </group>
+</menu>

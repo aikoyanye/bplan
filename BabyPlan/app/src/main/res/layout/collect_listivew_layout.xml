@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dip"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+     <ImageView
+        android:id="@+id/collect_delete_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/collect_delete"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="6dip"/>
+    <ImageView
+        android:id="@+id/collect_item_imageview" 
+        android:layout_width="73dip"
+        android:layout_height="73dip"
+        android:src="@mipmap/goods"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dip"/>
+
+    <TextView
+        android:id="@+id/collect_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="帮宝适 纸尿裤"
+        android:layout_toRightOf="@id/collect_item_imageview"
+        android:layout_alignTop="@id/collect_item_imageview"
+        android:layout_marginLeft="13dip"
+        android:layout_marginRight="40dip"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/collect_item_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="爸爸妈妈也喜欢"
+        android:layout_toRightOf="@id/collect_item_imageview"
+        android:layout_below="@id/collect_item_name"
+        android:layout_alignLeft="@id/collect_item_name"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="6dip"
+        android:textSize="12sp"/>
+    <TextView 
+        android:id="@+id/collect_item_price"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:text="￥132.0"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/collect_item_imageview"
+        android:layout_alignBottom="@id/collect_item_imageview"
+        android:layout_alignLeft="@id/collect_item_name"/>
+</RelativeLayout>

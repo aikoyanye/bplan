@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:background="#ffffff"
+         android:orientation="vertical">
+         <ImageButton 
+             android:id="@+id/allindent_back"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@mipmap/back"
+             android:layout_centerVertical="true"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="12dp"
+             android:padding="10dip"/>
+         <TextView
+             android:id="@+id/mine_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="我的订单"
+             android:textColor="#000000"
+             android:textSize="18dp" />  
+         <ImageButton   
+             android:id="@+id/top_close"  
+             android:layout_width="wrap_content"  
+             android:layout_height="wrap_content"  
+             android:background="@mipmap/closebtn"
+             android:layout_centerVertical="true"  
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="12dp"/>   
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="#C9C9C9"
+        android:layout_alignParentBottom="true" />
+    <TabHost 
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:background="#ffffff"/>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="15"/>
+        </LinearLayout>
+</TabHost>
+</LinearLayout>

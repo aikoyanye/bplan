@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/add_address_layout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/add_address_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:padding="10dip"/>
+        <TextView
+            android:id="@+id/mine_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="新增地址"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+        <ImageButton
+            android:id="@+id/top_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/closebtn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip">
+
+            <EditText
+                android:id="@+id/receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="收货人姓名"
+                android:paddingBottom="12dip"
+                android:paddingTop="12dip"
+                android:textColorHint="#CFCFCF"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/first_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dip"
+                android:layout_alignLeft="@id/receiver"
+                android:layout_alignParentRight="@id/receiver"
+                android:layout_below="@id/receiver"
+                android:background="#EBEBEB" />
+
+            <EditText
+                android:id="@+id/receiver_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_view"
+                android:background="@null"
+                android:hint="电话号码"
+                android:paddingBottom="12dip"
+                android:paddingTop="12dip"
+                android:textColorHint="#CFCFCF"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/second_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dip"
+                android:layout_alignLeft="@id/receiver"
+                android:layout_alignParentRight="@id/receiver"
+                android:layout_below="@id/receiver_telephone"
+                android:background="#EBEBEB" />
+
+            <LinearLayout
+                android:id="@+id/add_address_select_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/receiver"
+                android:layout_below="@id/second_view"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dip"
+                    android:paddingTop="12dip"
+                    android:text="选择地区："
+                    android:textColor="#2E2E2E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/address_select"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:paddingBottom="12dip"
+                    android:paddingTop="12dip"
+                    android:textColor="#2E2E2E"
+                    android:textCursorDrawable="@null"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/third_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dip"
+                android:layout_alignLeft="@id/receiver"
+                android:layout_alignParentRight="@id/receiver"
+                android:layout_below="@id/add_address_select_layout"
+                android:background="#EBEBEB" />
+
+            <EditText
+                android:id="@+id/add_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/receiver"
+                android:layout_alignParentRight="@id/receiver"
+                android:layout_below="@id/third_view"
+                android:background="@null"
+                android:hint="详细地址"
+                android:paddingBottom="12dip"
+                android:paddingTop="12dip"
+                android:textSize="13sp"
+                android:textColorHint="#CFCFCF"/>
+
+            <View
+                android:id="@+id/fourth_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dip"
+                android:layout_alignLeft="@id/receiver"
+                android:layout_alignParentRight="@id/receiver"
+                android:layout_below="@id/add_address_detail"
+                android:background="#EBEBEB" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/save_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="#C9C9C9"
+            android:gravity="center"
+            android:text="保存地址"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <com.kankan.wheel.widget.WheelView
+                    android:id="@+id/id_province"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"></com.kankan.wheel.widget.WheelView>
+
+                <com.kankan.wheel.widget.WheelView
+                    android:id="@+id/id_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"></com.kankan.wheel.widget.WheelView>
+
+                <com.kankan.wheel.widget.WheelView
+                    android:id="@+id/id_district"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:paddingBottom="10dip"></com.kankan.wheel.widget.WheelView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1"
+                android:background="#ff0000"
+                android:gravity="center"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

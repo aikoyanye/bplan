@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/titlebar"
+        android:gravity="center"
+        android:text="话题榜"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="话 题 榜"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:background="@color/test1"/>
+    <View style="@style/bg_line"/>
+        <ListView
+            android:id="@+id/topic_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+</LinearLayout>

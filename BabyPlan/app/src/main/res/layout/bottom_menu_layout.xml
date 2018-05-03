@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="60dp"  
+    android:background="#ffffff"  
+    android:orientation="horizontal">  
+    <LinearLayout  
+        android:id="@+id/home_page"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" >  
+ <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->  
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:background="#EBEBEB" />
+        <ImageButton  
+            android:id="@+id/home_page_imagebutton"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+            android:clickable="false"  
+            android:src="@mipmap/home1"
+            android:paddingTop="8dip" />  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="首页"
+            android:paddingTop="5dip"
+            android:textSize="13sp"  />  
+    </LinearLayout>  
+    <LinearLayout  
+         android:id="@+id/classify_page"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" >  
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:background="#EBEBEB" />
+        <ImageButton  
+             android:id="@+id/classify_imagebutton"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+             android:clickable="false"  
+            android:src="@mipmap/classify0"
+            android:paddingTop="8dip" />  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="分类"
+            android:paddingTop="5dip"
+            android:textSize="13sp"  />  
+    </LinearLayout>  
+    <LinearLayout  
+        android:id="@+id/shopping_cart_page"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" > 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:background="#EBEBEB" /> 
+        <ImageButton  
+             android:id="@+id/shopping_cart_imagebutton"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+             android:clickable="false"  
+            android:src="@mipmap/shopping_cart0"
+            android:paddingTop="8dip" />  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="购物车"
+            android:paddingTop="5dip"
+            android:textSize="13sp"  />  
+    </LinearLayout>  
+    <LinearLayout  
+        android:id="@+id/mine_page"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" > 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dip"
+            android:background="#EBEBEB" /> 
+        <ImageButton  
+             android:id="@+id/mine_imagebutton"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+            android:clickable="false"  
+            android:src="@mipmap/mine0"
+            android:paddingTop="8dip" />  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="我的"
+            android:paddingTop="5dip"
+            android:textSize="13sp"  />  
+    </LinearLayout>  
+  
+</LinearLayout>

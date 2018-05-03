@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <RelativeLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="45dp"  
+        android:background="#FFFFFF" >  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="20dp"  
+            android:text="妈妈乐-好用的商店"  
+            android:layout_centerVertical="true"  
+            android:textColor="#000000"  
+            android:textSize="18sp"/>  
+        <ImageButton   
+            android:id="@+id/top_add"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="@mipmap/closebtn"
+            android:layout_centerVertical="true"  
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"/>   
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="58dip"
+            android:gravity="center"
+            android:background="#ffffff">
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="11dip"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@mipmap/search"
+                android:hint=" 寻找称心商品"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp"
+                android:editable="false"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="#C9C9C9"
+        android:layout_alignParentBottom="true"/>
+    <ExpandableListView
+        android:id="@+id/classify_page_expendlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null" />
+</LinearLayout>

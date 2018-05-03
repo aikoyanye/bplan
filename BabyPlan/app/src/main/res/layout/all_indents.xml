@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B5B5B5"
+    android:id="@+id/all_indent_linearlayout" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dip"
+        android:background="#B5B5B5"
+        android:layout_alignParentBottom="true" />
+    <ExpandableListView
+        android:id="@+id/all_indents_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:childIndicator="@null">
+    </ExpandableListView>
+
+</LinearLayout>

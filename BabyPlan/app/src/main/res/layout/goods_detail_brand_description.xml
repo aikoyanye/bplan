@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <ImageView
+        android:id="@+id/brand_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/brand_logo"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"/>
+    <TextView 
+        android:id="@+id/brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="champion"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_below="@id/brand_logo"
+        android:layout_alignLeft="@id/brand_logo"
+        android:layout_marginTop="15dip"/>
+    <TextView
+        android:id="@+id/brand_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Champion不做传奇，只为打造属于你的时代"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_below="@id/brand_name"
+        android:layout_alignLeft="@id/brand_name"
+        android:layout_marginTop="15dip"
+        android:paddingBottom="70dip"/>
+</RelativeLayout>

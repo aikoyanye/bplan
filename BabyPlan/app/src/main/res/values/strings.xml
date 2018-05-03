@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BabyPlan</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="alert_open">开启时，超出划定区域将会通过响铃振动提醒您"</string>
+    <string name="baby_food_title">我要吃饱饱...</string>
+    <string name="baby_waste_title">拉粑粑了喔...</string>
+    <string name="baby_sleep_title">睡了多久呀...</string>
+    <string name="baby_check_title">成绩登记...</string>
+    <string name="baby_crehealth_title">生成健康报表...</string>
+
+    <string name="food">请输入摄食的量</string>
+    <string name="food_alert">温馨提示：在相应位置填写数字，未摄食种类，请留空</string>
+
+</resources>

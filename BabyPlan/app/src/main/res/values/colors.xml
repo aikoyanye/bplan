@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DB4D6D</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">@android:color/white</color>
+    <color name="text_bb">#FFbbbbbb</color>
+    <color name="titlebar">#DB4B6B</color>
+    <color name="underline">#E16B8C</color>
+    <color name="text_bge">#FFeeeeee</color>
+    <color name="title_text">#FF333333</color>
+    <color name="submit_color">#DB4D6D</color>
+    <color name="otherlogin">#8c8888</color>
+    <color name="text_cc">#FFcccccc</color>
+    <color name="bg_gray">#DDDDDD	</color>
+    <color name="bg_list">#F0F3F6</color>
+    <color name="test1">#F7C242</color>
+    <color name="test2">#F596AA</color>
+    <color name="test3">#3A8FB7</color>
+    <color name="test4">#B4b1DB</color>
+    <color name="red">#FF3333	</color>
+    <color name="backgroud">#FFFFFF</color>
+    <color name="text1">#59B29C	</color>
+    <color name="text2">#333333	</color>
+
+    <color name="divider">#ffd2d2d2</color>
+
+    <color name="zi_title">#8A6BBE</color>
+    
+    <color name="province_line_border">#C7C7C7</color>
+    
+    <color name="tabwidget_selected">#ff0000</color>
+    <color name="tabwidget_unselected">#000000</color>
+    <color name="waste_normal">#724938</color>
+    <color name="waste_innormal">#b47157</color>
+</resources>

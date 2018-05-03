@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/ic_community_black_24dp"
+        android:title="社区交流" />
+
+    <item
+        android:id="@+id/navigation_dingwei"
+        android:icon="@drawable/ic_dingwei_black_24dp"
+        android:title="宝宝定位"/>
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_shop_black_24dp"
+        android:title="智能商城"/>
+    <item
+        android:id="@+id/navigation_mycenter"
+        android:icon="@drawable/ic_mycenter_black_24dp"
+        android:title="宝宝日常" />
+
+</menu>
